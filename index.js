@@ -19,6 +19,8 @@ else {
 var context = new AudioContext();
 var AudioContext = window.AudioContext || window.webkitAudioContext
 
+var analyser = require('web-audio-analyser')(context);
+
 module.exports = WebAudioAnalyser
 
 function WebAudioAnalyser(audio, ctx, opts) {
